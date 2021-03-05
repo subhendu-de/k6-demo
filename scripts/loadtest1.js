@@ -1,5 +1,8 @@
 import http from 'k6/http';
 import { sleep } from 'k6';
+import { Trend } from 'k6/metrics';
+
+let durationTrend = new Trend('resp_duration');
 
 export let options = {
     stages: [
@@ -10,6 +13,8 @@ export let options = {
   };
 
 export default function () {
-  http.get('https://ekartapi2021.azurewebsites.net/Products');
-  sleep(1);
+  var res = http.get('http://test.k6.io');
+  //durationTrend.add(res.timings.duration);
+  //console.log('Response time was ' + String(res.timings.duration) + ' ms');
+  //sleep(1);
 }
