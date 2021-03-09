@@ -1,0 +1,9 @@
+FROM azul/zulu-openjdk-alpine:11
+
+# copy the packaged jar file into our docker image
+COPY target/k6-0.0.1-SNAPSHOT.jar /demo.jar
+ 
+# set the startup command to execute the jar
+CMD ["java", "-jar", "/demo.jar"]
+
+EXPOSE 8080:8080
