@@ -4,6 +4,13 @@ networks:
   k6:
 
 services: 
+  empsvc:
+    build: k6/.
+    networks:
+      - k6
+    ports:
+      - "8080:8080"
+    
   influxdb:
     image: influxdb:1.8
     networks:

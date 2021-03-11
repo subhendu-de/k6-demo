@@ -13,7 +13,7 @@ export let options = {
   };
 
 export default function () {
-  var res = http.get('http://test.k6.io');
+  var res = http.get('http://empsvc:8080/all');
   //durationTrend.add(res.timings.duration);
   //console.log('Response time was ' + String(res.timings.duration) + ' ms');
   //sleep(1);

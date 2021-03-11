@@ -4,7 +4,7 @@ This repository contains the files and artifacts used for giving a k6 demo
 #### Running the influxdb and grafana container
 
 ```bash
-docker-compose up influxdb grafana
+docker-compose up influxdb grafana empsvc
 ```
 
 #### Running the K6 container
@@ -12,3 +12,4 @@ docker-compose up influxdb grafana
 ```bash
 docker-compose run k6 run /scripts/loadtest1.js
 ```
+
