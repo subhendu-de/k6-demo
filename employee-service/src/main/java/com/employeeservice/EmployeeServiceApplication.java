@@ -1,13 +1,13 @@
-package com.k6demo;
+package com.employeeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class K6Application {
+public class EmployeeServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(K6Application.class, args);
+		SpringApplication.run(EmployeeServiceApplication.class, args);
 	}
 
 }

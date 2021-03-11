@@ -1,4 +1,4 @@
-package com.k6demo.model;
+package com.employeeservice.model;
 
 import org.springframework.data.annotation.Id;
 

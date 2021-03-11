@@ -9,8 +9,8 @@
 		<version>2.3.9.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.k6demo</groupId>
-	<artifactId>k6</artifactId>
+	<groupId>com.employeeservice</groupId>
+	<artifactId>employeeservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>k6</name>
 	<description>Demo project for Spring Boot</description>

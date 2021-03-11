@@ -1,4 +1,4 @@
-package com.k6demo.controller;
+package com.employeeservice.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.k6demo.model.Employee;
-import com.k6demo.service.K6DemoService;
+import com.employeeservice.model.Employee;
+import com.employeeservice.service.EmployeeService;
 
 @RestController
-public class K6DemoController {
+public class EmployeeController {
 
-	private static final Logger logger = LoggerFactory.getLogger(K6DemoController.class);
+	private static final Logger logger = LoggerFactory.getLogger(EmployeeController.class);
 
 	@Autowired
-	K6DemoService service;
+	EmployeeService service;
 
 	@GetMapping("/all")
 	public List<Employee> getAllEmployee() {

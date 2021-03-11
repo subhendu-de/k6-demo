@@ -1,4 +1,4 @@
-package com.k6demo.service;
+package com.employeeservice.service;
 
 import java.util.Optional;
 
@@ -7,15 +7,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.k6demo.model.Employee;
-import com.k6demo.repository.K6DemoRepository;
+import com.employeeservice.model.Employee;
+import com.employeeservice.repository.EmployeeRepository;
 
 @Service
-public class K6DemoService {
+public class EmployeeService {
 
-	private static final Logger logger = LoggerFactory.getLogger(K6DemoService.class);
+	private static final Logger logger = LoggerFactory.getLogger(EmployeeService.class);
 	@Autowired
-	private K6DemoRepository repository;
+	private EmployeeRepository repository;
 
 	public Iterable<Employee> findAll() {
 		logger.info("Find All Employee");
