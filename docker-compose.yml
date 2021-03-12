@@ -1,11 +1,11 @@
-version: '3.9'
+version: '3.3'
 
 networks: 
   k6:
 
 services: 
   empsvc:
-    build: k6/.
+    build: employee-service/.
     networks:
       - k6
     ports:
