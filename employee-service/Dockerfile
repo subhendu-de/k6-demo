@@ -10,8 +10,8 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR /app
 
-COPY --from=MAVEN_BUILD /build/target/k6-0.0.1-SNAPSHOT.jar /app/
+COPY --from=MAVEN_BUILD /build/target/employeeservice-0.0.1-SNAPSHOT.jar /app/
 
-ENTRYPOINT ["java", "-jar", "k6-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "employeeservice-0.0.1-SNAPSHOT.jar"]
 
 EXPOSE 8080:8080
