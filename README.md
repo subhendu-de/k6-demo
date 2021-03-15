@@ -12,4 +12,3 @@ docker-compose up influxdb grafana empsvc
 ```bash
 docker-compose run k6 run /scripts/loadtest1.js
 ```
-
