@@ -10,6 +10,9 @@ services:
       - k6
     ports:
       - "8080:8080"
+    environment:
+      - COSMOS_URI=xxx
+      - COSMOS_KEY=xxx
     
   influxdb:
     image: influxdb:1.8
